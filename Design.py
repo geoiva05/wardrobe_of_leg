@@ -2,6 +2,7 @@ import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QDesktopWidget
 from registration_Teacher import Registration_Teacher
+from registration_Student import Registration_Student
 
 
 def log_uncaught_exceptions(ex_cls, ex, tb):
@@ -32,6 +33,7 @@ class apposition(QMainWindow):
         uic.loadUi('data/check.ui', self)
         self.btn_like_teacher.setText('Войти как учитель')
         self.btn_like_student.setText('Войти как ученик')
+        self.center()
 
         self.btn_like_student.clicked.connect(self.entrance_like_student)
         self.btn_like_teacher.clicked.connect(self.entrance_like_teacher)
@@ -45,18 +47,19 @@ class apposition(QMainWindow):
 
     def Regist(self):
         uic.loadUi('data/check.ui', self)
+        self.center()
 
         self.btn_like_student.clicked.connect(self.regist_like_student)
         self.btn_like_teacher.clicked.connect(self.regist_like_teacher)
         self.btn_back.clicked.connect(self.back)
 
     def regist_like_student(self):
-        pass
+        self.reg = Registration_Student()
+        self.reg.show()
 
     def regist_like_teacher(self):
         self.reg = Registration_Teacher()
         self.reg.show()
-
 
     def back(self):
         pass

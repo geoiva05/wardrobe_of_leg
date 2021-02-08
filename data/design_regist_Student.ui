@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
-    <height>992</height>
+    <width>422</width>
+    <height>872</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QPushButton" name="btn_registration">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>810</y>
+      <x>90</x>
+      <y>680</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -36,8 +36,8 @@
    <widget class="QPushButton" name="btn_go_back">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>880</y>
+      <x>70</x>
+      <y>740</y>
       <width>271</width>
       <height>61</height>
      </rect>
@@ -52,7 +52,7 @@
    <widget class="QLabel" name="info">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>70</x>
       <y>0</y>
       <width>261</width>
       <height>71</height>
@@ -65,11 +65,11 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Регистрация.Быстро и легко&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="edit_city">
+   <widget class="QLineEdit" name="edit_second_name">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>290</y>
+      <x>60</x>
+      <y>250</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -82,7 +82,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>380</y>
+      <y>320</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -95,7 +95,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>470</y>
+      <y>390</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -108,7 +108,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>650</y>
+      <y>550</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -121,7 +121,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>740</y>
+      <y>630</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -134,7 +134,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>210</y>
+      <y>180</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -147,7 +147,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>130</y>
+      <y>100</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -160,7 +160,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>100</y>
+      <y>80</y>
       <width>181</width>
       <height>20</height>
      </rect>
@@ -169,14 +169,14 @@
      <string notr="true">background-color: rgb(255, 167, 15);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Введи Фамилию&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Введи фамилию&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="lab_name">
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>180</y>
+      <y>150</y>
       <width>181</width>
       <height>20</height>
      </rect>
@@ -188,27 +188,27 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Введи имя&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lab_city">
+   <widget class="QLabel" name="lab_second_name">
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>260</y>
+      <y>220</y>
       <width>171</width>
-      <height>20</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 167, 15);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Введи город&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Введи отчество&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="lab_school">
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>350</y>
+      <y>290</y>
       <width>171</width>
       <height>20</height>
      </rect>
@@ -224,7 +224,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>430</y>
+      <y>360</y>
       <width>171</width>
       <height>20</height>
      </rect>
@@ -240,7 +240,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>610</y>
+      <y>520</y>
       <width>171</width>
       <height>20</height>
      </rect>
@@ -255,8 +255,8 @@
    <widget class="QLabel" name="lab_password">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>700</y>
+      <x>110</x>
+      <y>590</y>
       <width>161</width>
       <height>20</height>
      </rect>
@@ -272,7 +272,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>520</y>
+      <y>440</y>
       <width>171</width>
       <height>20</height>
      </rect>
@@ -288,7 +288,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>550</y>
+      <y>470</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -303,7 +303,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>435</width>
+     <width>422</width>
      <height>25</height>
     </rect>
    </property>
