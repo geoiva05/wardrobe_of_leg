@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from enter_or_reg import enter_or_regist
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QDesktopWidget
+from registration_Teacher import Registration_Teacher
 
 
 def log_uncaught_exceptions(ex_cls, ex, tb):
@@ -20,13 +20,46 @@ sys.excepthook = log_uncaught_exceptions
 class apposition(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('', self)
+        uic.loadUi('data/Enter_or_regist.ui', self)
         self.initUI()
 
     def initUI(self):
         self.center()
-        self.zapusk = enter_or_regist()
-        self.zapusk.show()
+        self.btn_enter.clicked.connect(self.Entrance)
+        self.btn_regist.clicked.connect(self.Regist)
+
+    def Entrance(self):
+        uic.loadUi('data/check.ui', self)
+        self.btn_like_teacher.setText('Войти как учитель')
+        self.btn_like_student.setText('Войти как ученик')
+
+        self.btn_like_student.clicked.connect(self.entrance_like_student)
+        self.btn_like_teacher.clicked.connect(self.entrance_like_teacher)
+        self.btn_back.clicked.connect(self.back)
+
+    def entrance_like_teacher(self):
+        pass
+
+    def entrance_like_student(self):
+        pass
+
+    def Regist(self):
+        uic.loadUi('data/check.ui', self)
+
+        self.btn_like_student.clicked.connect(self.regist_like_student)
+        self.btn_like_teacher.clicked.connect(self.regist_like_teacher)
+        self.btn_back.clicked.connect(self.back)
+
+    def regist_like_student(self):
+        pass
+
+    def regist_like_teacher(self):
+        self.reg = Registration_Teacher()
+        self.reg.show()
+
+
+    def back(self):
+        pass
 
     def center(self):
         qr = self.frameGeometry()

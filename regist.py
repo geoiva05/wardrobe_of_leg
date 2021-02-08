@@ -1,9 +1,7 @@
 import sys
 import sqlite3
 from PyQt5 import uic
-from enter_or_reg import enter_or_regist
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from enter_or_reg import enter_or_regist
 
 
 class Registration(QMainWindow):
@@ -35,7 +33,8 @@ class Registration(QMainWindow):
                     (self.school != '') and (self.school_class != '') and (self.city != ''):
                 if (record == 0) and (self.vvod_password.text() == self.repitin_password.text()):
                     self.cur.execute("INSERT INTO users students(?, ?, ?, ?, ?, ?, ?)",
-                                     (self.surname, self.name, self.city, self.school, self.school_class, self.login, self.password, ''))
+                                     (self.surname, self.name, self.city, self.school, self.school_class, self.login,
+                                      self.password, ''))
                     self.films.commit()
                 elif record != 0:
                     reply = QMessageBox.about(self, 'Error',
@@ -65,8 +64,3 @@ class Registration(QMainWindow):
             else:
                 reply = QMessageBox.about(self, 'Error',
                                           "Заполните пустые строки.")
-
-    def back(self):
-        self.vozvrat = enter_or_regist()
-        self.vozvrat.show()
-        self.wind_registration.hide()
