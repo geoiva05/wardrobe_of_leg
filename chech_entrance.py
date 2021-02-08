@@ -1,8 +1,8 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QDesktopWidget
-from registration_Teacher import Registration_Teacher
-from registration_Student import Registration_Student
+from entrance_student import Entrance_Student
+from entrance_teacher import Entrance_Teacher
 
 
 class Check_entrance(QMainWindow):
@@ -17,10 +17,12 @@ class Check_entrance(QMainWindow):
         self.btn_back.clicked.connect(self.back)
 
     def entrance_like_teacher(self):
-        pass
+        self.wind = Entrance_Teacher()
+        self.wind.show()
 
     def entrance_like_student(self):
-        pass
+        self.wind = Entrance_Student()
+        self.wind.show()
 
     def back(self):
         pass
