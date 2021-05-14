@@ -27,8 +27,7 @@ class Registration_Student(QMainWindow):
         self.login = self.edit_login.text()
         self.password = self.edit_password.text()
         My_sql_query = """SELECT Login from Students where Login = ?"""
-        dat = self.cur.execute(My_sql_query, (self.login, ))
-        print(dat)
+        dat = self.cur.execute(My_sql_query, (self.login,))
         record = len(self.cur.fetchall())
         if (self.surname != '') and (self.name != '') and (self.login != '') and (self.password != '') and \
                 (self.school != '') and (self.second_name != ''):
